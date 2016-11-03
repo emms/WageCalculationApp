@@ -1,0 +1,1 @@
+var wageCalculationApp = angular.module('wageCalculationApp', []);

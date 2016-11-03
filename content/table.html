@@ -1,0 +1,22 @@
+<table ng-controller="TableController as table" ng-init="table.formatTableData()">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Total Wage</th>
+    <th>Total hours</th>
+    <th>Overtime hours</th>
+    <th>Overtime pay</th>
+    <th>Evening hours</th>
+    <th>Evening pay</th>
+  </tr>
+  <tr ng-repeat="row in table.rows | orderBy: 'id'">
+    <td>{{ row.id }}</td>
+    <td>{{ row.personName }}</td>
+    <td>${{ row.totalWage | number : 2 }}</td>
+    <td>{{ row.totalHours }}</td>
+    <td>{{ row.overtimeHours }} ({{ row.overtimePercent | number: 2 }}%)</td>
+    <td>${{ row.overtimePay | number: 2 }}</td>
+    <td>{{ row.eveningHours }} ({{ row.eveningPercent | number: 2 }}%)</td>
+    <td>${{ row.eveningPay | number: 2 }}</td>
+  </tr>
+</table>
