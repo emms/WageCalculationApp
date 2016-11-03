@@ -16,6 +16,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.js"></script>
+  <script type="text/javascript" src="js/app/app.js"></script>
+  <script type="text/javascript" src="js/app/services/CalculationService.js"></script>
+  <script type="text/javascript" src="js/app/controllers/MainController.js"></script>
+  <script type="text/javascript" src="js/app/controllers/TableController.js"></script>
 </head>
 
 <body ng-app="wageCalculationApp" ng-controller="MainController as main">
@@ -25,13 +32,6 @@
     <div ng-include="'content/table.html'" ng-if="main.showTable"></div>
     <footer></footer>
   </div>
-  <script type="text/javascript" src="js/lib/jquery-1.12.2.js"></script>
-  <script type="text/javascript" src="js/lib/angular-1.5.2.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.js"></script>
-  <script type="text/javascript" src="js/app/app.js"></script>
-  <script type="text/javascript" src="js/app/services/CalculationService.js"></script>
-  <script type="text/javascript" src="js/app/controllers/MainController.js"></script>
-  <script type="text/javascript" src="js/app/controllers/TableController.js"></script>
 </body>
 
 </html>
